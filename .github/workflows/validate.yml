@@ -76,7 +76,7 @@ jobs:
           mv cmake-build/Zelda64Recompiled Zelda64Recompiled
           rm -rf assets/scss
           zip -r Zelda64Recompiled.zip Zelda64Recompiled assets/ gamecontrollerdb.txt
-      - name: Upload Zelda64Recomp for UWP
+      - name: Upload Zelda64Recomp UWP
         uses: actions/upload-artifact@v4
         with:
           name: Zelda64Recompiled-UWP-${{ runner.os }}-${{ matrix.type }}
